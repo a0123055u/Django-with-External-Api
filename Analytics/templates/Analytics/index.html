@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<title>Page Title</title>
+</head>
+<body>
+<label>Bus Stop ID</label>
+<input type ="text" id="busStopId" >
+<button id ="btn" >Get Bus</button>
+<div>
+    <table>
+  <thead>
+    <tr>
+      <th>Bus Service NO </th>
+      <th>Arrival Time 1</th>
+       <th>Arrival Time2</th>
+       <th>Arrival Time3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="one"></td>
+      <td id="two"></label></td>
+    </tr>
+
+  </tbody>
+
+</table>
+</div>
+</body>
+<script>
+
+$('#btn').click(function() {
+
+		$.ajax({
+    url: 'http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2',
+    headers: {
+        'AccountKey':'3xwuowbkRXuw0XI9SRqPcw==',
+        'Accept':'application/json',
+		<!--'Access-Control-Allow-Origin': 'http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2',-->
+		<!--'Access-Control-Allow-Methods': 'GET',-->
+		<!--'Access-Control-Allow-Headers':'AccountKey',-->
+		<!--'Access-Control-Allow-Credentials':true-->
+    },
+    method: 'GET',
+    dataType: 'json',
+    data: {'BusStopCode':$('#busStopId').val()},
+    success: function(data){
+      console.log('succes: '+data);
+       $("table tbody").empty()
+              for (i = 0; i < data['Services'].length; i++) {
+                console.log(data['Services'][i]['Operator']+" "+data['Services'][i]['ServiceNo']+" "+data['Services'][i]['NextBus']['EstimatedArrival']+" "+(data['Services'][i]).toString());
+                let date = new Date();
+                let time = date.toTimeString();
+                var row = "<tr><td><label>"+data['Services'][i]['ServiceNo']+"</label>"+"</td><td>" +"<label>"+((data['Services'][i]['NextBus']['EstimatedArrival']).split("T")[1])+"</label>" + "</td>"+"<td>" +"<label>"+((data['Services'][i]['NextBus2']['EstimatedArrival']).split("T")[1])+"</label>" +"<td>"+"<td>" +"<label>"+((data['Services'][i]['NextBus3']['EstimatedArrival']).split("T")[1])+"</label>" +"<td>"+"</tr>";
+
+                $("table tbody").append(row);
+                    if((data['Services'].length-1) == i){
+                    console.log(data['Services'])
+
+
+                    $.ajax({
+                            url: '/analytics/test/',
+                            type: 'post',
+                            dataType: 'json',
+                            contentType: 'application/json',
+                            success: function (data) {
+                                console.log(data);
+                            },
+                            data: JSON.stringify(data['Services'])
+                        });
+                   }
+
+            }
+    }
+  });
+});
+
+$('#save').click(function(){
+
+ // get the value of CSRF token
+        //var CSRFtoken = $('input[name=csrfmiddlewaretoken]').val();
+
+        var data = document.getElementById("id_new_list").value;
+
+
+
+});
+</script>
+</html>
