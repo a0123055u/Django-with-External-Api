@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.template import loader
 from json.decoder import JSONDecodeError
 import json
@@ -13,33 +13,26 @@ def index(request):
 
 def get_bus_arrival(request):
     if request.method == 'POST':
-        my_json = request.body.decode('utf8').replace("'", '"')
-        body_unicode = json.loads(my_json)
+        request_json = request.body.decode('utf-8')
         ########################### EXTERNAL API CALL TO LTA DATA MALL BusArrivalv2 STARTS########################
-        url_bus_arrival_lta_datamall_api = 'http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2'
-        headers= {
-            'AccountKey': '3xwuowbkRXuw0XI9SRqPcw==',
-            'Accept': 'application/json'}
-        data = {'BusStopCode':'45131'}
-        response = requests.get(url_bus_arrival_lta_datamall_api,headers=headers,params=data)
+        if request_json:
+            url_bus_arrival_lta_datamall_api = 'http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2'
+            headers= {
+                'AccountKey': '3xwuowbkRXuw0XI9SRqPcw==',
+                'Accept': 'application/json'}
+            data = {'BusStopCode':str(request_json)}
+            response = requests.get(url_bus_arrival_lta_datamall_api,headers=headers,params=data)
+        else:
+            context = {'status_code': 404, 'msg': 'Please fill in the Bud Stop Id','status':'error'}
+            return JsonResponse(context)
         ##############################EXTERNAL API CALL TO LTA DATA MALL BusArrivalv2 ENDS HERE####################
-        print (json.dumps(response.json(), indent=2, sort_keys=True))
-        print (response.status_code)
-        i=0
+        # print (json.dumps(response.json(), indent=2, sort_keys=True))
         test = []
-        if response.status_code == 200:
-            for k,v in response.json().items():
-                i+=1
-                print(i)
-                if(k == 'Services'):
-                    test = v
-
-                print ('API Response',v)
-            # for x in test:
-            #     print (x['ServiceNo'])
-            #     # print('val',key,val)
-            # print('response',response)
-
+        print('response.status_code',response.status_code)
+        for k, v in response.json().items():
+            if (k == 'Services'):
+                test = v
+        if response.status_code == 200 and len(test)!=0:
             bus_arr_v2_obj = busarrivalv2
             # val = body_unicode['item_text']
             for x in test:
@@ -59,7 +52,9 @@ def get_bus_arrival(request):
                 bus_arr_v2_obj.save()
                 # print(body_unicode)
             # print('request.body',body_unicode)
-            return HttpResponse(status=201)
+            context ={'Services':test,'status_code':200,'msg':'Successfully recieved data'}
+            return JsonResponse(context)
         else:
-            return HttpResponse(status=500)
+            context = {'status_code': 500, 'msg': 'Server Not available pls try after some time'}
+            return JsonResponse(context)
 
