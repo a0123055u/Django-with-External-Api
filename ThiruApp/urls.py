@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^analytics/$',include('Analytics.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'/test/$',views.get_bus_arrival),
+    # url(r'^search/', include('haystack.urls')),
 
 ]

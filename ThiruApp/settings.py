@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+from datetime import datetime, timedelta
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -37,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Analytics'
+    'Analytics',
+'django_celery_beat'
+   
 ]
 
 MIDDLEWARE = [
@@ -75,13 +78,19 @@ WSGI_APPLICATION = 'ThiruApp.wsgi.application'
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+'default': {
         'ENGINE': 'mysql.connector.django',
         'NAME': 'thiruapp',
         'USER': 'root',
-        'PASSWORD': 'root'
-    }
+        'PASSWORD': 'root',
+'OPTIONS': {
+          'autocommit': True,
+        },
+    },
+
 }
+
+
 
 
 # Password validation
@@ -101,6 +110,14 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+# HAYSTACK_CONNECTIONS = {
+#     'default': {
+#         'ENGINE': 'haystack.backends.elasticsearch2_backend.Elasticsearch2SearchEngine',
+#         'URL': 'http://127.0.0.1:9200/',
+#         'INDEX_NAME': 'haystack_busarrivalv2',
+#     },
+# }
+
 
 
 # Internationalization
@@ -116,8 +133,17 @@ USE_L10N = True
 
 USE_TZ = True
 
+# CELERYBEAT_SCHEDULE = {
+#     'say-hello-every-30-seconds': {
+#         'task': 'tasks.delete_record_older_than_three_days',
+#         'schedule': timedelta(seconds=30)
+#     },
+# }
+# CELERY_TIMEZONE = 'UTC'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
