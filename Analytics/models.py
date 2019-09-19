@@ -14,5 +14,5 @@ class busarrivalv2(models.Model):
     type = models.CharField(max_length=5,null=True,blank=True)
     visit_number = models.CharField(max_length=3,null=True,blank=True)
     last_updated_time = models.DateTimeField(auto_now=True,blank=True,null=True)
-
+    bus_stop_id = models.CharField(max_length=20,null=True,blank=True)
 

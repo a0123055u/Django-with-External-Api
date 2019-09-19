@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Analytics'
+    'Analytics',
+   
 ]
 
 MIDDLEWARE = [
@@ -75,13 +76,19 @@ WSGI_APPLICATION = 'ThiruApp.wsgi.application'
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+'default': {
         'ENGINE': 'mysql.connector.django',
         'NAME': 'thiruapp',
         'USER': 'root',
-        'PASSWORD': 'root'
-    }
+        'PASSWORD': 'root',
+'OPTIONS': {
+          'autocommit': True,
+        },
+    },
+
 }
+
+
 
 
 # Password validation
@@ -101,6 +108,14 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+# HAYSTACK_CONNECTIONS = {
+#     'default': {
+#         'ENGINE': 'haystack.backends.elasticsearch2_backend.Elasticsearch2SearchEngine',
+#         'URL': 'http://127.0.0.1:9200/',
+#         'INDEX_NAME': 'haystack_busarrivalv2',
+#     },
+# }
+
 
 
 # Internationalization
@@ -121,3 +136,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
