@@ -14,6 +14,6 @@ from celery.decorators import periodic_task
 @shared_task
 def delete_record_older_than_three_days():
     print('From scheduler task ----->>',"For Delete ")
-    response = busarrivalv2.objects.filter(last_updated_time__lte=datetime.now()-timedelta(days=3)).delete()
+    response = busarrivalv2.objects.filter(last_updated_time__lte=datetime.now()-timedelta(days=1)).delete()
     return response
 

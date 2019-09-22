@@ -4,7 +4,7 @@ from django.template import loader
 from json.decoder import JSONDecodeError
 import json
 import requests
-from Analytics.models import busarrivalv2
+from Analytics.models import busarrivalv2, busTiming
 import requests as req
 from datetime import datetime
 from datetime import timedelta
@@ -53,20 +53,19 @@ def get_bus_arrival(request):
 
             for x in response_data:
                 # print(x['ServiceNo']," ",x['Operator']," ",x['NextBus']['EstimatedArrival']," ",x['NextBus2']['EstimatedArrival'])
+                #primary table for basic details
                 bus_arr_v2_obj = busarrivalv2()
+                bus_timing = busTiming()
                 bus_arr_v2_obj.service_number = x['ServiceNo']
                 bus_arr_v2_obj.operator=x['Operator']
-                bus_arr_v2_obj.destination_code=x['NextBus']['DestinationCode']
-                bus_arr_v2_obj.estimated_arrival=x['NextBus']['EstimatedArrival']
-                bus_arr_v2_obj.feature=x['NextBus']['Feature']
-                bus_arr_v2_obj.latitude= x['NextBus']['Latitude']
-                bus_arr_v2_obj.longitute=x['NextBus']['Longitude']
-                bus_arr_v2_obj.load=x['NextBus']['Load']
-                bus_arr_v2_obj.origin_code=x['NextBus']['OriginCode']
-                bus_arr_v2_obj.type=x['NextBus']['Type']
-                bus_arr_v2_obj.visit_number=x['NextBus']['VisitNumber']
                 bus_arr_v2_obj.bus_stop_id = str(request_json)
                 bus_arr_v2_obj.save()
+                #secondary table for details
+                bus_timing.next_bus = x['NextBus']
+                bus_timing.next_bus1 = x['NextBus2']
+                bus_timing.next_bus2 = x['NextBus3']
+                bus_timing.busarrivalv2_details = busarrivalv2.objects.latest('id')
+                bus_timing.save()
                 # print(body_unicode)
             # print('request.body',body_unicode)
             context ={'Services':response_data,'status_code':200,'msg':'Successfully recieved data'}
