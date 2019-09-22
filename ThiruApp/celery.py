@@ -18,13 +18,13 @@ app.config_from_object('django.conf:settings', namespace='CELERY')
 
 
 
-app.conf.beat_schedule = {
-    'add-every-30-seconds': {
-        'task': 'tasks.create_random_user_accounts',
-        'schedule': 30.0
-    },
-}
-app.conf.timezone = 'UTC'
+# app.conf.beat_schedule = {
+#     'add-every-30-seconds': {
+#         'task': 'tasks.create_random_user_accounts',
+#         'schedule': 30.0
+#     },
+# }
+# app.conf.timezone = 'UTC'
 # Load task modules from all registered Django app configs.
 app.autodiscover_tasks()
 

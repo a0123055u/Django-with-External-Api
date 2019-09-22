@@ -16,10 +16,18 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 from Analytics import urls,views
+from rest_framework import routers
+# from django.urls import path
+
+router = routers.DefaultRouter()
+router.register(r'analytics_bus_arrival', views.BusArrivalV2)
+
 
 
 urlpatterns = [
     url(r'^analytics/$',include('Analytics.urls')),
+
+url(r'analytics_bus_arrival/$',(views.BusArrivalV2).as_view({'get': 'list'})),
     url(r'^admin/', admin.site.urls),
     url(r'/test/$',views.get_bus_arrival),
     # url(r'^search/', include('haystack.urls')),

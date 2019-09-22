@@ -8,6 +8,9 @@ from Analytics.models import busarrivalv2, busTiming
 import requests as req
 from datetime import datetime
 from datetime import timedelta
+from rest_framework import viewsets
+from Analytics.serializer import *
+
 
 from Analytics.tasks import delete_record_older_than_three_days
 
@@ -74,4 +77,8 @@ def get_bus_arrival(request):
             context = {'status_code': 500, 'msg': 'Server Not available pls try after some time'}
             return JsonResponse(context)
 
+
+class BusArrivalV2(viewsets.ModelViewSet):
+    queryset = busarrivalv2.objects.all()
+    serializer_class = BusArrivalBaseSerializer
 
