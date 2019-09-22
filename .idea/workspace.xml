@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aac3887a-86c3-4f6e-ab76-083f156e62d5" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Analytics/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/Analytics/tasks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Analytics/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Analytics/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ThiruApp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ThiruApp/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ThiruApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ThiruApp/settings.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analytics/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analytics/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Analytics/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analytics/templates/Analytics/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Analytics/templates/Analytics/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analytics/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Analytics/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThiruApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ThiruApp/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThiruApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ThiruApp/urls.py" afterDir="false" />
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +29,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Analytics/tasks.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="289">
               <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+=======
+            <state relative-caret-position="170">
+              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -28,6 +44,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/ThiruApp/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="595">
@@ -47,11 +64,23 @@
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/Analytics/tests.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThiruApp/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="77" selection-start-line="77" selection-end-line="88" selection-end-column="1" />
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/ThiruApp/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -59,6 +88,12 @@
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/Analytics/search_indexes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
             </state>
           </provider>
         </entry>
@@ -68,6 +103,8 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="15" column="21" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="21" />
+<<<<<<< HEAD
+=======
             </state>
           </provider>
         </entry>
@@ -75,8 +112,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Analytics/urls.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Analytics/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="136">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
+=======
+            <state relative-caret-position="306">
+              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -85,18 +140,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/Analytics/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
               <caret line="45" column="55" lean-forward="true" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
+=======
+        <entry file="file://$PROJECT_DIR$/ThiruApp/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="e#642#682#0" expanded="true" />
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/ThiruApp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -104,19 +169,38 @@
               <folding>
                 <element signature="e#642#682#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/Analytics/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/Analytics/admin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" selection-start-line="3" selection-end-line="3" />
+=======
+        <entry file="file://$PROJECT_DIR$/Analytics/templates/Analytics/search.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+              <folding>
+                <element signature="e#188#194#1" expanded="true" />
+                <element signature="e#868#875#0" expanded="true" />
+                <element signature="e#1068#1075#0" expanded="true" />
+              </folding>
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Analytics/templates/Analytics/search.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -131,6 +215,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -156,11 +242,14 @@
       <find>my</find>
       <find>django.apps</find>
       <find>hay</find>
+<<<<<<< HEAD
       <find>create_random_user_accounts</find>
       <find>busarrivalv2</find>
       <find>`</find>
       <find>save</find>
       <find>delete_record_older_than_three_days</find>
+=======
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,6 +258,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/ThiruApp/__init__.py" />
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
         <option value="$PROJECT_DIR$/Analytics/template/index.py" />
         <option value="$PROJECT_DIR$/Analytics/template/idex.html" />
         <option value="$PROJECT_DIR$/Analytics/urls.py" />
@@ -181,16 +274,22 @@
         <option value="$PROJECT_DIR$/ThiruApp/urls.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/site-packages/django/contrib/contenttypes/apps.py" />
         <option value="$PROJECT_DIR$/Analytics/search_indexes.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Analytics/models.py" />
         <option value="$PROJECT_DIR$/ThiruApp/__init__.py" />
         <option value="$PROJECT_DIR$/ThiruApp/celery.py" />
+=======
+        <option value="$PROJECT_DIR$/ThiruApp/settings.py" />
+        <option value="$PROJECT_DIR$/Analytics/tasks.py" />
+        <option value="$PROJECT_DIR$/Analytics/models.py" />
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
         <option value="$PROJECT_DIR$/Analytics/views.py" />
         <option value="$PROJECT_DIR$/ThiruApp/settings.py" />
         <option value="$PROJECT_DIR$/Analytics/tasks.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-155" />
     <option name="y" value="3" />
     <option name="width" value="1696" />
@@ -262,8 +361,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1960193" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -289,6 +387,12 @@
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/site-packages/django/contrib/contenttypes/management.py" />
     <entry file="file://$PROJECT_DIR$/Analytics/celery.py" />
     <entry file="file://$PROJECT_DIR$/Analytics/apps.py" />
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/ThiruApp/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
     <entry file="file://$PROJECT_DIR$/ThiruApp/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -298,6 +402,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Analytics/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
+<<<<<<< HEAD
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/site-packages/django/contrib/contenttypes/management/commands/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -369,20 +474,53 @@
             <element signature="e#188#194#1" expanded="true" />
             <element signature="e#868#875#0" expanded="true" />
             <element signature="e#1068#1075#0" expanded="true" />
+=======
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/site-packages/django/contrib/contenttypes/management/commands/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/ssl.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/site-packages/django/contrib/contenttypes/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/site-packages/django/contrib/admindocs/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analytics/templates/Analytics/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ThiruApp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="340">
           <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+=======
+        <state relative-caret-position="425">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
           <folding>
             <element signature="e#642#682#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/ThiruApp/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -400,19 +538,50 @@
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/Analytics/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analytics/templates/Analytics/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding>
+            <element signature="e#188#194#1" expanded="true" />
+            <element signature="e#868#875#0" expanded="true" />
+            <element signature="e#1068#1075#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ThiruApp/settings.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="77" selection-start-line="77" selection-end-line="88" selection-end-column="1" />
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThiruApp/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="595">
           <caret line="141" column="25" lean-forward="true" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="25" />
+=======
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
           <folding>
             <element signature="e#312#321#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Analytics/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -420,13 +589,44 @@
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/Analytics/search_indexes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analytics/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analytics/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analytics/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="21" />
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ThiruApp/celery.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="561">
           <caret line="33" column="48" lean-forward="true" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+=======
+        <state relative-caret-position="306">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+>>>>>>> e0b17b999b24c1dd29a4a32d1896b490989c7bd0
           <folding>
             <element signature="e#0#56#0" expanded="true" />
           </folding>

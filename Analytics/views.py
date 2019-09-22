@@ -8,7 +8,9 @@ from Analytics.models import busarrivalv2
 import requests as req
 from datetime import datetime
 from datetime import timedelta
+
 from Analytics.tasks import delete_record_older_than_three_days
+
 # import schedule
 import time
 def index(request):

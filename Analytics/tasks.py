@@ -16,3 +16,4 @@ def delete_record_older_than_three_days():
     print('From scheduler task ----->>',"For Delete ")
     response = busarrivalv2.objects.filter(last_updated_time__lte=datetime.now()-timedelta(days=3)).delete()
     return response
+
