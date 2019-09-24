@@ -17,11 +17,15 @@ from Analytics.tasks import delete_record_older_than_three_days
 # import schedule
 import time
 def index(request):
-    print('entering')
+    print('entering index')
     return render(request,'analytics/index.html')
 
+def home(request):
+    print('entering home')
+    return render(request, 'analytics/home.html')
 
 def get_bus_arrival(request):
+    print('entering get bus')
     if request.method == 'POST':
         request_json = request.body.decode('utf-8')
         ########################### EXTERNAL API CALL TO LTA DATA MALL BusArrivalv2 STARTS########################

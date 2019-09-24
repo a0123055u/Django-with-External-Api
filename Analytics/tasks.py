@@ -10,6 +10,7 @@ from datetime import timedelta
 import time
 from celery.task.schedules import crontab
 from celery.decorators import periodic_task
+from celery import task
 
 @shared_task
 def delete_record_older_than_three_days():
@@ -17,3 +18,8 @@ def delete_record_older_than_three_days():
     response = busarrivalv2.objects.filter(last_updated_time__lte=datetime.now()-timedelta(days=1)).delete()
     return response
 
+@task(name="delete_record_older_than_one_days_beat")
+def delete_record_older_than_one_days_beat():
+    print('From scheduler task ----->>',"For Delete ")
+    response = busarrivalv2.objects.filter(last_updated_time__lte=datetime.now()-timedelta(days=1)).delete()
+    return response

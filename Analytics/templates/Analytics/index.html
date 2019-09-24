@@ -59,7 +59,7 @@ $('#btn').click(function() {
     var pay_load = $('#busStopId').val()?$('#busStopId').val():alert('pls fill the required field');
     if(pay_load){
         $.ajax({
-            url: '/analytics/test/',
+            url: 'get_bus_arrival_post/',
             method: 'post',
             dataType: 'json',
             data:pay_load,

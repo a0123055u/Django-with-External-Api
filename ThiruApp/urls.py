@@ -18,18 +18,20 @@ from django.contrib import admin
 from Analytics import urls,views
 from rest_framework import routers
 # from django.urls import path
-
+from Analytics.views import home
 router = routers.DefaultRouter()
 router.register(r'analytics_bus_arrival', views.BusArrivalV2)
 
 
 
 urlpatterns = [
-    url(r'^analytics/$',include('Analytics.urls')),
-
-url(r'analytics_bus_arrival/$',(views.BusArrivalV2).as_view({'get': 'list'})),
+    url(r'get_bus_arrival', views.get_bus_arrival, name="get_bus_arrival_post/"),
+    url(r'^analytics/$',views.index,name="analytics"),
+    url(r'^analytics_bus_arrival/$',(views.BusArrivalV2).as_view({'get': 'list'}),name="analytics_bus_arrival"),
     url(r'^admin/', admin.site.urls),
-    url(r'/test/$',views.get_bus_arrival),
+
+    url(r'^$',views.home, name="home"),
+
     # url(r'^search/', include('haystack.urls')),
 
 ]

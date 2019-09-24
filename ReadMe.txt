@@ -4,6 +4,9 @@
 
  celery -A ThiruApp worker -l info -P eventlet
 
+1.1) celery beat 
+celery -A ThiruApp beat -l info -S django
+
 
 2) Command to start flower GUI 
 
